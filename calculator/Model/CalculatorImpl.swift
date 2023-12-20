@@ -30,7 +30,7 @@ class CalculatorImpl: Calculator {
         if inputStr.count >= il {
             return
         }
-        if (inputStr.suffix(2) == ".0")
+        if (inputStr.suffix(1) == "0" && hasPoint && d != 0)
         {
             inputStr.removeLast()
         }
